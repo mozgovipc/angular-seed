@@ -30,12 +30,20 @@
     $script([
       'bower_components/angular/angular.js',
       'bower_components/angular-route/angular-route.js',
-      'app.js',
-      'view1/view1.js',
-      'view2/view2.js',
-      'components/version/version.js',
-      'components/version/version-directive.js',
-      'components/version/interpolate-filter.js'
+      'app.module.js',
+      'app.config.js',
+      'view1/view1.module.js',
+      'view1/view1.config.js',
+      'view1/view1.controller.js',
+      'view2/view2.module.js',
+      'view2/view2.config.js',
+      'view2/view2.controller.js',
+      'components/version/version.module.js',
+      'components/version/version.values.js',
+      'components/version/directive/version.module.js',
+      'components/version/directive/version.directive.js',
+      'components/version/interpolate/interpolate.module.js',
+      'components/version/interpolate/interpolate.filter.js',
     ], function() {
       // when all is done, execute bootstrap angular application
       angular.bootstrap(document, ['myApp']);
